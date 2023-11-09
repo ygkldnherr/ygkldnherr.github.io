@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Some_c++_knowledge_points</title>
+      <link href="/2023/11/09/Some-c-knowledge-points/"/>
+      <url>/2023/11/09/Some-c-knowledge-points/</url>
+      
+        <content type="html"><![CDATA[<p>在做题的时候会接触到一些零碎的知识点（作为一个小白），记录防忘。<span id="more"></span></p><ol><li><p>有时会根据某些规律定量输出一定数量的空格</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%*s&quot;</span>, i, <span class="string">&quot; &quot;</span>);<span class="comment">//*是占位，指的是i代表的域宽。</span></span><br></pre></td></tr></table></figure></li><li><p>基于范围的for循环</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> e : arr)</span><br><span class="line">&#123;</span><br><span class="line">cout &lt;&lt; e &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MD 学习记录</title>
       <link href="/2023/11/07/my-first-blog-about-MD/"/>
       <url>/2023/11/07/my-first-blog-about-MD/</url>
