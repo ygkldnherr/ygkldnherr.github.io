@@ -8,7 +8,7 @@
       <link href="/2023/11/18/buuctf-pwn-wp/"/>
       <url>/2023/11/18/buuctf-pwn-wp/</url>
       
-        <content type="html"><![CDATA[<p>记录一些pwn题wp<span id="more"></span></p><h1 id="1-test-your-nc"><a href="#1-test-your-nc" class="headerlink" title="1.test_your_nc"></a>1.test_your_nc</h1><p>测试nc， ls 看到有flag， cat flag得到flag。<br><img src="test_your_nc.png"></p><h1 id="2-rip"><a href="#2-rip" class="headerlink" title="2. rip"></a>2. rip</h1>]]></content>
+        <content type="html"><![CDATA[<p>记录一些pwn题wp<span id="more"></span></p><h1 id="1-test-your-nc"><a href="#1-test-your-nc" class="headerlink" title="1.test_your_nc"></a>1.test_your_nc</h1><p>测试nc， ls 看到有flag， cat flag得到flag。<br><img src="test_your_nc.png">  </p><blockquote><p>nc是<a href="https://so.csdn.net/so/search?q=netcat&amp;spm=1001.2101.3001.7020">netcat</a>的简写</p><p>（1）实现任意TCP/UDP端口的侦听，nc可以作为server以TCP或UDP方式侦听指定端口<br>（2）端口的扫描，nc可以作为client发起TCP或UDP连接<br>（3）机器之间传输文件<br>（4）机器之间网络测速</p></blockquote><p><code>nc [-hlnruz][-g&lt;网关...&gt;][-G&lt;指向器数目&gt;][-i&lt;延迟秒数&gt;][-o&lt;输出文件&gt;][-p&lt;通信端口&gt;][-s&lt;来源位址&gt;][-v...][-w&lt;超时秒数&gt;][主机名称][通信端口...]</code></p><h1 id="2-rip"><a href="#2-rip" class="headerlink" title="2. rip"></a>2. rip</h1>]]></content>
       
       
       
