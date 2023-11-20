@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>32位传参 VS 64位传参</title>
+      <link href="/2023/11/20/i386-VS-AMD64/"/>
+      <url>/2023/11/20/i386-VS-AMD64/</url>
+      
+        <content type="html"><![CDATA[<p>对32位传参和64位传参的比较<span id="more"></span></p><blockquote><p>i386=Intel 80386。其实i386通常被用来作为对Intel（英特尔）32位微处理器的统称。<br>AMD64，又称“x86-64”或“x64”，是一种64位元的电脑处理器架构。它是建基于现有32位元的x86架构，由AMD公司所开发。</p></blockquote><p>2位使用栈帧（栈帧是指函数在被调用时，所拥有的一块独立的用于存放函数所使用的状态和变量的栈空间。 每个函数都对应有一个栈帧。 同一个函数多次进入，每次可能会分配到不同的栈帧。 整个栈的内容在同一个时刻可以看作是由许多栈帧依序“堆叠”组成的。）来作为传递的参数的保存位置，而64位使用寄存器，分别用rdi,rsi,rdx,rcx,r8,r9作为第1-6个参数。rax作为返回值 64位没有栈帧的指针，32位用ebp作为栈帧指针，64位取消了这个设定，rbp作为通用寄存器使用。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>buuctf_pwn_wp</title>
       <link href="/2023/11/18/buuctf-pwn-wp/"/>
       <url>/2023/11/18/buuctf-pwn-wp/</url>
