@@ -8,13 +8,13 @@
       <link href="/2023/12/01/first-exploration-ELF/"/>
       <url>/2023/12/01/first-exploration-ELF/</url>
       
-        <content type="html"><![CDATA[<p>钱钱地了解下ELF文件，以后会从多个角度反复阐述。<span id="more"></span></p><p><img src="ELF.jpg" alt="ELF概览图"></p>]]></content>
+        <content type="html"><![CDATA[<p>浅浅地了解下ELF文件，以后会从多个角度反复阐述。<span id="more"></span></p><p><img src="ELF.jpg" alt="ELF概览图"></p>]]></content>
       
       
       
         <tags>
             
-            <tag> CTF </tag>
+            <tag> PWN </tag>
             
         </tags>
       
@@ -75,6 +75,12 @@
         <content type="html"><![CDATA[<p>在做题的时候会接触到一些零碎的知识点（作为一个小白），记录防忘。<span id="more"></span></p><ol><li><p>有时会根据某些规律定量输出一定数量的空格</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%*s"</span>, i, <span class="string">" "</span>);<span class="comment">//*是占位，指的是i代表的域宽。</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"Initialized string: %.*s\n"</span>, <span class="built_in">sizeof</span>(str), str);</span><br></pre></td></tr></tbody></table></figure></li><li><p>基于范围的for循环</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr[] = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>};</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> e : arr)</span><br><span class="line">{</span><br><span class="line">cout &lt;&lt; e &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li><li><p>反三角函数</p></li></ol>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
       
     </entry>
     
