@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>初探ELF</title>
+      <link href="/2023/12/01/first-exploration-ELF/"/>
+      <url>/2023/12/01/first-exploration-ELF/</url>
+      
+        <content type="html"><![CDATA[<p>钱钱地了解下ELF文件，以后会从多个角度反复阐述。<span id="more"></span></p><p><img src="ELF.jpg" alt="ELF概览图"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>32位传参 VS 64位传参</title>
       <link href="/2023/11/20/i386-VS-AMD64/"/>
       <url>/2023/11/20/i386-VS-AMD64/</url>
