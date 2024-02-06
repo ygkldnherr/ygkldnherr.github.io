@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ubuntu22.04连不上网</title>
+      <link href="/2024/02/06/ubuntu22-04%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91/"/>
+      <url>/2024/02/06/ubuntu22-04%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<p>我的ubuntu22.04老是无缘无故连不上网。<span id="more"></span></p><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo service NetworkManager stop </span><br><span class="line"> </span><br><span class="line">sudo rm /var/lib/NetworkManager/NetworkManager.state </span><br><span class="line"> </span><br><span class="line">sudo service NetworkManager start</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一些pwn</title>
       <link href="/2023/12/05/some-small-pwn-topics/"/>
       <url>/2023/12/05/some-small-pwn-topics/</url>
