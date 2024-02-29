@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>LibcSearcher_update</title>
+      <link href="/2024/02/29/LibcSearcher-update/"/>
+      <url>/2024/02/29/LibcSearcher-update/</url>
+      
+        <content type="html"><![CDATA[<p>更新LIbcSearcher <span id="more"></span></p><ol><li><pre><code>cd LibcSearcherrm -rf libc-databasegit clone https://github.com/niklasb/libc-database.git</code></pre></li><li><p>cd libc-database执行./get</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ubuntu22.04连不上网</title>
       <link href="/2024/02/06/ubuntu22-04%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91/"/>
       <url>/2024/02/06/ubuntu22-04%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91/</url>
