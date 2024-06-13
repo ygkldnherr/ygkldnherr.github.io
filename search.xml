@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>win11pro激活</title>
+      <link href="/2024/06/13/win11pro%E6%BF%80%E6%B4%BB/"/>
+      <url>/2024/06/13/win11pro%E6%BF%80%E6%B4%BB/</url>
+      
+        <content type="html"><![CDATA[<p>激活win11pro <span id="more"></span></p><p>出现类似下面的问题<br><img src="/2024/06/13/win11pro%E6%BF%80%E6%B4%BB/%E9%97%AE%E9%A2%98.png"></p><p>解决：</p><p>打开注册表找到如下路径修改SkioRearm<br><img src="/2024/06/13/win11pro%E6%BF%80%E6%B4%BB/Snipaste_2024-06-13_12-01-30.png"></p><p><img src="/2024/06/13/win11pro%E6%BF%80%E6%B4%BB/Snipaste_2024-06-13_12-01-42.png"></p><p>将0修改为1</p><p>管理员终端运行  </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">slmgr /skms kms.org</span><br><span class="line">slmgr /ato</span><br><span class="line"> </span><br><span class="line">(上面两个不行，运行的下面三行成功！)</span><br><span class="line"> </span><br><span class="line">slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</span><br><span class="line">slmgr /skms kms.03k.org</span><br><span class="line">slmgr /ato</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LibcSearcher 报错</title>
       <link href="/2024/03/24/LibcSearcher-%E6%8A%A5%E9%94%99/"/>
       <url>/2024/03/24/LibcSearcher-%E6%8A%A5%E9%94%99/</url>
