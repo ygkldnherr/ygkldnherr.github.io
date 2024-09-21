@@ -27,13 +27,13 @@
       <link href="/2024/09/04/NSSCTF-wp-0904/"/>
       <url>/2024/09/04/NSSCTF-wp-0904/</url>
       
-        <content type="html"><![CDATA[<p>NSSCTF-wp-0904<span id="more"></span></p><h1 id="ret2scu"><a href="#ret2scu" class="headerlink" title="ret2scu"></a>ret2scu</h1><h2 id="checksec"><a href="#checksec" class="headerlink" title="checksec"></a>checksec</h2><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_1.png"></p><p>64位程序，开启了NX</p><h2 id="ida"><a href="#ida" class="headerlink" title="ida"></a>ida</h2><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_2.png"></p><p>只有一个函数存在栈溢出，但不存在其他可利用的漏洞，也没有后门函数。</p><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_4.png"></p><p>灭有足够的gadgets去泄露libc基址</p><p>想到可以利用ret2scu构造gadgets劫持程序流</p><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_3.png"></p><p>从0x4012AA到0x4012B2可以通过栈控制rbx,rbp,r12,r13,r14,r15的值，从0x401290到0x401296可以通过r14,r13,r12d（r12的低32位）分别控制rdx,rsi,edi（rdi的低32位）而rdx,rsi,rdi正是x64位系统的寄存器调用的前三个，再控制r15为目标函数的地址，rbx为0则可以调用目标函数，控制rbx + 1 == rbp则不会调用loc_401290这里可以简单地设置rbx = 0，rbp = 1。</p>]]></content>
+        <content type="html"><![CDATA[<p>NSSCTF-wp-0904<span id="more"></span></p><h1 id="ret2csu"><a href="#ret2csu" class="headerlink" title="ret2csu"></a>ret2csu</h1><h2 id="checksec"><a href="#checksec" class="headerlink" title="checksec"></a>checksec</h2><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_1.png"></p><p>64位程序，开启了NX</p><h2 id="ida"><a href="#ida" class="headerlink" title="ida"></a>ida</h2><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_2.png"></p><p>只有一个函数存在栈溢出，但不存在其他可利用的漏洞，也没有后门函数。</p><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_4.png"></p><p>灭有足够的gadgets去泄露libc基址</p><p>想到可以利用ret2scu构造gadgets劫持程序流</p><p><img src="/2024/09/04/NSSCTF-wp-0904/ret2scu_3.png"></p><p>从0x4012AA到0x4012B2可以通过栈控制rbx,rbp,r12,r13,r14,r15的值，从0x401290到0x401296可以通过r14,r13,r12d（r12的低32位）分别控制rdx,rsi,edi（rdi的低32位）而rdx,rsi,rdi正是x64位系统的寄存器调用的前三个，再控制r15为目标函数的地址，rbx为0则可以调用目标函数，控制rbx + 1 == rbp则不会调用loc_401290这里可以简单地设置rbx = 0，rbp = 1。</p>]]></content>
       
       
       
         <tags>
             
-            <tag> CTF </tag>
+            <tag> PWN </tag>
             
         </tags>
       
