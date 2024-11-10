@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
   <diagram name="第 1 页" id="3GR5ZFJ99SGeGk10Pyea">
-    <mxGraphModel dx="1434" dy="1941" grid="1" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="1781" grid="1" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1097,14 +1097,39 @@
         <mxCell id="WYKo_Dr29TlFVB-BD8c5-4" value="edit" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1008" y="864" width="144" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="e9wr-NMQodEFk4D1QF0n-2" value="printf_stack_frame" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1008" y="2988" width="180" height="144" as="geometry" />
+        <mxCell id="U-gUQuHXQ8NfZInVRHI8-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="e9wr-NMQodEFk4D1QF0n-2" target="U-gUQuHXQ8NfZInVRHI8-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="3240" />
+              <mxPoint x="1080" y="3132" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="e9wr-NMQodEFk4D1QF0n-47" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;%p&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印指针的内存地址，显示为十六进制&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;%d&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印十进制整数&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%s&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印字符串&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%n&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 将已输出的字符数写入指定变量&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%hn&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;将已输出的内容按2byte计数写入指定变量&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%hhn&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ~1byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%ln&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;~4byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%lln&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ~8byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%x&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印无符号整数的十六进制表示（小写）&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%X&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印无符号整数的十六进制表示（大写）&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e9wr-NMQodEFk4D1QF0n-2" value="printf_stack_frame" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1116" y="3168" width="180" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="e9wr-NMQodEFk4D1QF0n-47" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;%p&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印指针的内存地址，显示为十六进制&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;%d&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印十进制整数&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%s&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印字符串&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%n&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 将已输出的字符数写入指定变量&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%hn&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;将已输出的内容按2byte计数写入指定变量&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%hhn&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ~1byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%ln&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;~4byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%lln&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ~8byte&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%x&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印无符号整数的十六进制表示（小写）&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;%X&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 打印无符号整数的十六进制表示（大写）&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1009" y="2412" width="531" height="207" as="geometry" />
         </mxCell>
-        <mxCell id="e9wr-NMQodEFk4D1QF0n-48" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;利用格式化字符串漏洞实现任意地址的读和写&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="972" y="2700" width="504" height="72" as="geometry" />
+        <mxCell id="e9wr-NMQodEFk4D1QF0n-48" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;利用格式化字符串漏洞实现任意地址的读和写&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="972" y="2664" width="504" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="U-gUQuHXQ8NfZInVRHI8-1" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;格式化字符串&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1057.5" y="2376" width="261" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="U-gUQuHXQ8NfZInVRHI8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U-gUQuHXQ8NfZInVRHI8-2" target="U-gUQuHXQ8NfZInVRHI8-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1332" y="3114" />
+              <mxPoint x="1332" y="3456" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U-gUQuHXQ8NfZInVRHI8-2" value="&amp;amp;&quot;%x%x%x&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1116" y="3096" width="180" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="U-gUQuHXQ8NfZInVRHI8-8" value="Hello World!" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1116" y="3456" width="180" height="36" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
