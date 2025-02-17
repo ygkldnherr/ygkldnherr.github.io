@@ -1146,6 +1146,9 @@
         <mxCell id="UHqcUmEWpAVa2tvrz9he-8" value="下界溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="827" y="4320" width="73" height="36" as="geometry" />
         </mxCell>
+        <mxCell id="UHqcUmEWpAVa2tvrz9he-9" value="以短整型为例，有两种情况，一种是0x7fff + 1另一种是0xffff + 1" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="4140" width="648" height="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
