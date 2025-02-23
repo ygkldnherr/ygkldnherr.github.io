@@ -1140,50 +1140,53 @@
         <mxCell id="UHqcUmEWpAVa2tvrz9he-6" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.87); font-family: &amp;quot;Noto Sans&amp;quot;, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 19.2px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;当程序中的数据超过其数据类型的范围，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0.87); font-family: &amp;quot;Noto Sans&amp;quot;, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 19.2px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;则会造成溢出，整数类型的溢出被称为整数溢出。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1008" y="4032" width="504" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-5" value="整数溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-5" value="整数溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="900" y="4284" width="72" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.45;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;size=0.45;" parent="1" vertex="1">
           <mxGeometry x="972" y="4229.9" width="27" height="144.19" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-7" value="上界溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-7" value="上界溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1008" y="4211.25" width="72" height="36.75" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-8" value="下界溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-8" value="下界溢出" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1008" y="4356" width="72" height="36.75" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-9" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-9" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="1080" y="4195.13" width="20" height="69" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-10" value="有符号数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-10" value="有符号数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1116" y="4176" width="72" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-11" value="无符号数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-11" value="无符号数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1116" y="4248" width="72" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-15" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-15" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="1080" y="4339.13" width="20" height="69" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-16" value="有符号数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-16" value="有符号数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1116" y="4320" width="72" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-17" value="无符号数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-17" value="无符号数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1116" y="4392" width="72" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-18" value="0x7fff + 1 = 0x8000，也就是从32767变成了-32768" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-18" value="0x7fff + 1 = 0x8000，也就是从32767变成了-32768" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1188" y="4176" width="396" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-19" value="0x0000 - 1 = 0xffff，也就是从0变成了65535" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-19" value="0x0000 - 1 = 0xffff，也就是从0变成了65535" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1188" y="4392" width="396" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-20" value="0x8000 - 1 = 0x7fff，也就是从-32768变成了32767" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-20" value="0x8000 - 1 = 0x7fff，也就是从-32768变成了32767" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1188" y="4320" width="396" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-21" value="0xffff + 1 = 0x0000，也就是从65535变成了0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-21" value="0xffff + 1 = 0x0000，也就是从65535变成了0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1188" y="4248" width="396" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="aT1UVSk8bnW7CGFPp01Y-22" value="以短整型为例" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;textDirection=vertical-rl;fontColor=light-dark(#b0b0b0, #ededed);" vertex="1" parent="1">
+        <mxCell id="aT1UVSk8bnW7CGFPp01Y-22" value="以短整型为例" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;textDirection=vertical-rl;fontColor=light-dark(#b0b0b0, #ededed);" parent="1" vertex="1">
           <mxGeometry x="987" y="4254.13" width="21" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="f0XvcxNunQsz3whLw3V--1" value="以NSSCTF的题目shaokao为例&lt;div style=&quot;text-align: left;&quot;&gt;1.checksec&amp;nbsp; 64位程序，开启了canary，栈不可执行，没有开启PIE&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2.丢到ida里，发现时静态连接，可以联想到ROP，再者没有后门函数所以就只能用ret2syscall&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3.&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;mov eax, 59&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;mov ebx, [“/bin/sh”]&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;mov ecx, 0&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;mov edx, 0&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;int 0x80&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp;=&amp;gt; execve(&quot;/bin/sh&quot;,NULL,NULL)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="900" y="4464" width="684" height="315" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
