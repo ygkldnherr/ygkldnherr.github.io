@@ -1,0 +1,237 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="29.2.1">
+  <diagram name="第 1 页" id="8UYwnleJqlJ67iUKuNXm">
+    <mxGraphModel dx="2066" dy="1161" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-1" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;工作人员&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-2" parent="1" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=left;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;宠物领养平台&lt;/font&gt;" vertex="1">
+          <mxGeometry height="1220" width="660" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-3" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;救助站注册&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-4" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.496;exitY=0.492;exitDx=0;exitDy=0;exitPerimeter=0;" target="SLtnBVHbGbG2jHJgewBj-3" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="110" y="390" as="sourcePoint" />
+            <mxPoint x="270" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-5" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;管理员&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="40" x="1000" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-6" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;在线沟通面试&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-7" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-13" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="SLtnBVHbGbG2jHJgewBj-5" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="440" y="380" as="sourcePoint" />
+            <mxPoint x="600" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-8" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;领养人&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-9" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;管理宠物档案&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-10" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="SLtnBVHbGbG2jHJgewBj-9" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="120" y="300" as="sourcePoint" />
+            <mxPoint x="280" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-11" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;提交领养申请&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-12" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="130" y="400" as="sourcePoint" />
+            <mxPoint x="290" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-13" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;审核救助站资质&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="710" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-14" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="90" y="290" as="sourcePoint" />
+            <mxPoint x="250" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-15" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="120" y="400" as="sourcePoint" />
+            <mxPoint x="280" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-16" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;提交资质文件&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-17" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-3" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-16" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="450" y="149.29" as="sourcePoint" />
+            <mxPoint x="610" y="149.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-18" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;审核领养申请&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-19" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;查看领养申请&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-20" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;管理领养流程&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-21" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;记录家访信息&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-22" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;更新宠物状态&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-23" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;生成领养协议&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-24" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-20" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-21" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.0345" y="25" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="430" y="380" as="sourcePoint" />
+            <mxPoint x="510" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-25" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-20" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="420" y="460" as="sourcePoint" />
+            <mxPoint x="500" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-26" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-20" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-23" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="0.6276" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="430" y="430" as="sourcePoint" />
+            <mxPoint x="510" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-27" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;发布待领养宠物信息&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-28" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;开启健康记录模块&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="710" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-29" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;归档已领养宠物&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-30" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;自动归档宠物信息&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-31" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-29" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-30" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="440" y="600" as="sourcePoint" />
+            <mxPoint x="520" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-32" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-30" style="edgeStyle=none;html=1;endArrow=open;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-28" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="440" y="620" as="sourcePoint" />
+            <mxPoint x="510" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-33" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-19" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-70" y="540" as="sourcePoint" />
+            <mxPoint x="90" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-34" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-18" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-60" y="540" as="sourcePoint" />
+            <mxPoint x="100" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-35" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-20" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-20" y="610" as="sourcePoint" />
+            <mxPoint x="140" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-36" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-27" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-40" y="610" as="sourcePoint" />
+            <mxPoint x="120" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-37" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-1" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-29" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-50" y="690" as="sourcePoint" />
+            <mxPoint x="110" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-38" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;平台监管&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="710" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-39" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-38" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="SLtnBVHbGbG2jHJgewBj-5" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="940" y="710" as="sourcePoint" />
+            <mxPoint x="1100" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-40" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;浏览待领养宠物&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-41" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;查看宠物详情&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-42" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-11" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-41" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="420" y="1050" as="sourcePoint" />
+            <mxPoint x="800" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-43" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;管理已领养宠物&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="1210.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-44" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;查看领养进度&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-45" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;提供养宠教育内容&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="1211" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-46" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-43" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" target="SLtnBVHbGbG2jHJgewBj-45" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="425" y="1249.29" as="sourcePoint" />
+            <mxPoint x="505" y="1249.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-47" parent="1" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;查看宠物详情&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-48" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-40" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="20" y="1200" as="sourcePoint" />
+            <mxPoint x="180" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-49" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-47" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint y="1140" as="sourcePoint" />
+            <mxPoint x="160" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-50" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-44" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-50" y="1160" as="sourcePoint" />
+            <mxPoint x="110" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLtnBVHbGbG2jHJgewBj-51" edge="1" parent="1" source="SLtnBVHbGbG2jHJgewBj-8" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLtnBVHbGbG2jHJgewBj-43" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="10" y="1240" as="sourcePoint" />
+            <mxPoint x="170" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
